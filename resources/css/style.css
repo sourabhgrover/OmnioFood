@@ -1,9 +1,13 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
 *{
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+html{
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
@@ -11,40 +15,16 @@ body{
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
 .row{
     width: 1140px;
     margin: 0 auto;
 }
 
-/* ------------------------------ */
-/* HEADER  */
-/*------------------------------- */
-header{
-    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("img/hero.jpg");
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    
-}
-.hero-text-box{
-    position: absolute;
-    width: 1140px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
-}
-
-h1{
-    margin: 0;
-    margin-bottom: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-    font-size: 240%;
-}
-
+/* ------------ BUTTONS --------- */
 .btn{
     text-decoration: none;
     border-radius: 200px;
@@ -79,3 +59,74 @@ h1{
     background-color: #e67e22;
     color: #fff;
 }
+
+/* ----- HEADINGS ----- */
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-size: 240%;
+}
+
+/* ------------------------------ */
+/* HEADER  */
+/*------------------------------- */
+header{
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+
+.logo{
+    width: auto;
+    height: 100px;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li{
+display: inline-block;
+margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited
+{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 8px 0;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active
+{
+    border-bottom: 2px solid #e67e22;
+    
+}
+
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
