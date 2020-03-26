@@ -15,3 +15,22 @@ body{
     width: 1140px;
     margin: 0 auto;
 }
+
+/* ------------------------------ */
+/* HEADER  */
+/*------------------------------- */
+header{
+    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    
+}
+.hero-text-box{
+    position: absolute;
+    margin: 0;
+    width: 1140px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
