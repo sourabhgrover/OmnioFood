@@ -28,9 +28,54 @@ header{
 }
 .hero-text-box{
     position: absolute;
-    margin: 0;
     width: 1140px;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    font-size: 240%;
+}
+
+.btn{
+    text-decoration: none;
+    border-radius: 200px;
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 30px;
+    transition: background-color 0.2s, border 0.2s,color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active{
+    border: 1px solid #cf6d17;
+    background-color: #cf6d17;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+    border: 1px solid #e67e22;
+    background-color: #e67e22;
+    color: #fff;
 }
