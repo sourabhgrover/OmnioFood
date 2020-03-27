@@ -188,3 +188,43 @@ margin-left: 40px;
 }
 
 
+/* ---------------------------- */
+/* Feature Section */
+/* ---------------------------- */
+.meal-section{
+    width: 100%;
+    padding: 0;
+}
+
+.meal-section ul{
+    list-style: none;
+    display: block;
+    float: left;
+}
+
+.meal-section ul li{
+    width: 25%;
+    float: left;
+    
+}
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    height: auto;
+}
+.meal-photo img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15);
+    transition: transform 0.5s,opacity 0.5s ;
+}
+
+.meal-photo img:hover {
+    width: 100%;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
