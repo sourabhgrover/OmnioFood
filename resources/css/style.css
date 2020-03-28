@@ -28,6 +28,18 @@ section{
     padding: 80px 0;
 }
 
+.clearfix{
+    zoom : 1;
+}
+
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /* ------------ BUTTONS --------- */
 .btn{
     text-decoration: none;
@@ -96,6 +108,7 @@ h2:after{
     margin: 0 auto;
     margin-top: 30px;
 }
+
 
 h3{
     font-size: 120%;
@@ -228,3 +241,47 @@ margin-left: 40px;
     transform: scale(1.05);
 }
 
+/* ----------------------------------------------- */
+/* HOW IT WORKS */
+/* ----------------------------------------------- */
+
+.how-it-works-section{
+    background-color: #f4f4f4;
+}
+
+.steps-box-left{
+text-align: right;
+}
+.iphone-icon{
+    height: auto;
+    width: 50%;
+}
+
+.steps-box-right{
+    padding-left: 5%;
+    margin-top: 10%;
+}
+
+.work-step{
+    margin-bottom: 50px;
+}
+
+.work-step div{
+    float: left;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    color: #e67e22;
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    text-align: center;
+    font-size: 150%;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px ;
+}
