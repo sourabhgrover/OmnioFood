@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="vendor/css/grid.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
@@ -15,7 +16,7 @@
     <header>
         <nav>
             <div class="row">
-                <img alt="logo" src="/resources/img/logo-white.png" class="logo">
+                <img alt="logo" src="resources/img/logo-white.png" class="logo">
                 <ul class="main-nav">
                     <li><a href="#">Food delivery</a></li>
                     <li><a href="#">How it works</a></li>
@@ -139,7 +140,10 @@
         
     </section>
     <section class="cities-section">
-        <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
+        <div class="row">
+            <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
+        </div>
+        
         <div class="row">
             <div class="col span-1-of-4 citi-box">
                 <img src="resources/img/lisbon-3.jpg" alt="City Lisbon">
@@ -367,6 +371,10 @@
                 </p>
             </div>
         </footer>
+
+        <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
 </body>
 
 </html>

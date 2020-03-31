@@ -2,30 +2,19 @@
 /* BASIC SETUP */
 /* ----------------------------------------------- */
 
-*{
+* {
     margin:0;
     padding: 0;
     box-sizing: border-box;
 }
-html{
+html,body{
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
-}
-
-/* ----------------------------------------------- */
-/* REUSABLE COMPONENTS */
-/* ----------------------------------------------- */
-.row{
-    width: 1140px;
-    margin: 0 auto;
-}
-
-section{
-    padding: 80px 0;
+    overflow-x: hidden;
 }
 
 .clearfix{
@@ -40,6 +29,20 @@ section{
     visibility: hidden;
 }
 
+
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section{
+    padding: 80px 0;
+}
+
+
 /* ------------ BUTTONS --------- */
 .btn,
 input[type=submit]{
@@ -48,6 +51,7 @@ input[type=submit]{
     display: inline-block;
     font-weight: 300;
     padding: 10px 30px;
+    -webkit-transition: background-color 0.2s, border 0.2s,color 0.2s;
     transition: background-color 0.2s, border 0.2s,color 0.2s;
 }
 .btn:hover,
@@ -147,7 +151,8 @@ h3{
 /* HEADER  */
 /*------------------------------- */
 header{
-    background-image: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("img/hero.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -182,6 +187,7 @@ margin-left: 40px;
     font-size: 90%;
     padding: 8px 0;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -197,7 +203,8 @@ margin-left: 40px;
     width: 1140px;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
 }
 
 
@@ -240,14 +247,19 @@ margin-left: 40px;
     width: 100%;
     height: auto;
     opacity: 0.7;
-    transform: scale(1.15);
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -webkit-transition: opacity 0.5s,-webkit-transform 0.5s;
+    transition: opacity 0.5s,-webkit-transform 0.5s;
     transition: transform 0.5s,opacity 0.5s ;
+    transition: transform 0.5s,opacity 0.5s,-webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
     width: 100%;
     opacity: 1;
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 /* ----------------------------------------------- */
@@ -323,7 +335,8 @@ text-align: right;
 /* TESTIMONIAL */
 /* ----------------------------------------------- */
 .testimonial-section{
-    background-image: linear-gradient(rgb(0, 0, 0, 0.8),rgb(0, 0, 0, 0.8)), url("img/back-customers.jpg");
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
